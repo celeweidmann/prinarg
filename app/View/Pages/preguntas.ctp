@@ -1,25 +1,25 @@
 <div>
-<div class="col-md-3">
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
 	<div class="row">
-		<div class="col-md-2">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 			
 		</div>
 	</div>
 </div>
-<div class="col-md-9">
-	<div class="row">
-		<div class="col-md-12">
+<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+	<div class="row hidden-xs">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 			<ul class="nav nav-tabs">
   				<li><?php echo $this->Html->link("Firmware Disponible", array('controller'=>'pages', 'action'=>'firmware'), array('class'=>'pestania'))?></li>
   				<li><?php echo $this->Html->link("Recuperación", array('controller'=>'pages', 'action'=>'recuperacion'), array('class'=>'pestania'))?></li>
   				<li class="active"><?php echo $this->Html->link("Preguntas Frecuentes", array('controller'=>'pages', 'action'=>'preguntas'), array('class'=>'pestania'))?></li>
 			</ul>
-			<div col-md-12>
-			</div>
-			</div>
+		</div>
 	</div>
 	<div class="row">
-		<div class="col-md-12">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<h4 class="titulo visible-xs">Preguntas Frecuentes</h4>
+			<hr class="linea visible-xs">
 			<ol>
 				<br>
 				<li>
@@ -91,7 +91,7 @@
 	</div>
 </div>	
 </div>
-<div class="col-md-12">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 	<br><br><br><br>
 	<hr class="linea">
 	 <?php echo $this->element('marcascarousel'); ?>

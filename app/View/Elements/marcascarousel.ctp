@@ -3,30 +3,30 @@
 	<!-- Wrapper for slides -->
 	<div class="carousel-inner">
     	<div class="item active">
-    		<div class="col-md-12 ">
-    			<div class="col-md-3 col-sm-3">
+    		<div class="col-md-12 col-sm-12 col-xs-12">
+    			<div class="col-md-3 col-sm-3 col-xs-3">
       				<?php echo $this->Html->image('logos/lexmark_50px.png', array('class'=>'marcas img-responsive', 'align'=>'center'));?>
     			</div>
-    			<div class="col-md-3 col-sm-3">
+    			<div class="col-md-3 col-sm-3  col-xs-3">
       				<?php echo $this->Html->image('logos/olivetti_50px.png', array('class'=>'marcas img-responsive'));?>
     			</div>
-    			<div class="col-md-3">
+    			<div class="col-md-3 col-sm-3 col-xs-3">
       				<?php echo $this->Html->image('logos/HP_50px.png', array('class'=>'marcas img-responsive'));?>
       			</div>
-      			<div class="col-md-3">
+      			<div class="col-md-3 col-sm-3 col-xs-3">
       				<?php echo $this->Html->image('logos/canon_50px.png', array('class'=>'marcas img-responsive'));?>
       			</div>
     		</div>
     	</div>
     	<div class="item">
-    		<div class="col-md-12">
-    			<div class="col-md-4">
+    		<div class="col-md-12 col-sm-12 col-xs-12">
+    			<div class="col-md-4  col-sm-4  col-xs-4">
     				<?php echo $this->Html->image('logos/brother_50px.png', array('class'=>'marcas img-responsive'));?>
     			</div>
-    			<div class="col-md-4">
+    			<div class="col-md-4  col-sm-4  col-xs-4">
     				<?php echo $this->Html->image('logos/epson_50px.png', array('class'=>'marcas img-responsive'));?>
     			</div>
-    			<div class="col-md-4">
+    			<div class="col-md-4  col-sm-4  col-xs-4">
     				<?php echo $this->Html->image('logos/samsung_50px.png', array('class'=>'marcas img-responsive'));?>
     			</div>
     		</div>

@@ -1,21 +1,21 @@
 <div>
-<div class="col-md-3">
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
 	<div class="row">
-		<div class="col-md-12">
+		<div class="col-lg-12 col-md-12 col-sm-12 hidden-xs">
 			<?php echo $this->element('marcas_x1'); ?>
 		</div>
 	</div>
 </div>
-<div class="col-md-9">
+<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
 	<div class="row">
-		<div class="col-md-12">
-			<ul class="nav nav-tabs">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<ul class="nav nav-tabs  hidden-xs">
   				<li><?php echo $this->Html->link("Firmware Disponible", array('controller'=>'pages', 'action'=>'firmware'), array('class'=>'pestania'))?></li>
   				<li class="active"><?php echo $this->Html->link("Recuperación", array('controller'=>'pages', 'action'=>'recuperacion'), array('class'=>'pestania'))?></li>
   				<li><?php echo $this->Html->link("Preguntas Frecuentes", array('controller'=>'pages', 'action'=>'preguntas'), array('class'=>'pestania'))?></li>
 			</ul>
-			<!--<h4 class="titulo">Recuperación</h4>
-			<hr class="linea">-->
+			<h4 class="titulo visible-xs">Recuperación</h4>
+			<hr class="linea visible-xs">
 			<div class="destacado">
 				<p>
 				Debido a innumerables consultas de usuarios que han tenido malas experiencias al intentar 
@@ -55,7 +55,7 @@
 	</div>
 	<br>
 	<div class="row">
-		<div class="col-md-12">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 			<h4 class="titulo">¿Cómo conocer si su impresora está en ESTADO de RECUPERACIÓN?</h4><hr class="linea">
 			<p>
 				Luego del desbloqueo que usted hizo, la impresora cumple con varios o uno de los siguientes ITEMS:
@@ -90,7 +90,7 @@
 	</div>
 </div>	
 </div>
-<div class="col-md-12">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 	<br><br><br><br>
 	<hr class="linea">
 	 <?php echo $this->element('marcascarousel'); ?>

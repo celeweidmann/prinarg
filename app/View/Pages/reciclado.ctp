@@ -1,15 +1,15 @@
 <div>
-<div class="col-md-4">
+<div class="col-lg-4 col-md-4 col-sm-3 hidden-xs">
 	<div class="row">
-		<div class="col-md-12 marcas-lista">
+		<div class="col-lg-12 col-md-12 marcas-lista">
 	 		<!--<?php echo $this->element('marcas'); ?>-->
 	 		<?php echo $this->Html->image('planta.gif', array('class' => 'img-responsive'));?>
 		</div>
 	</div>
 </div>
-<div class="col-md-8">
+<div class="col-lg-8 col-md-8 col-sm-9 col-xs-12">
 	<div class="row">
-		<div class="col-md-12">
+		<div class="col-lg-12 col-md-12">
 			<h4 class="titulo">Reciclados</h4><hr class="linea">
 			<p>
 				En Printa Argentina nos especializamos en el reciclado de cartuchos de las tres 
@@ -27,8 +27,14 @@
 			</p>
 		</div>
 	</div>
+	<div class="row visible-xs">
+		<div class="col-xs-8 col-xs-offset-2 marcas-lista">
+	 		<!--<?php echo $this->element('marcas'); ?>-->
+	 		<?php echo $this->Html->image('planta.gif', array('class' => 'img-responsive'));?>
+		</div>
+	</div>
 	<div class="row">
-		<div class="col-md-12">
+		<div class="col-lg-12 col-md-12">
 			<h4 class="titulo">Asesoramiento</h4><hr class="linea">
 			<p>
 				Si usted está en esa etapa de adquisición de una nueva impresora, comuníquese con nosotros sin 

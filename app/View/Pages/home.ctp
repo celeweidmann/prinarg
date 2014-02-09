@@ -1,16 +1,16 @@
-<div>
-<div class="col-md-4">
+<div class="col-xs-12">
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 	<div class="row">
 		<!--<div class="col-md-9 col-md-offset-3">-->
-		<div class="col-md-12">
+		<div class="col-lg-12 col-md-12 col-xs-10 col-xs-offset-1">
 			<?php echo $this->Html->image('cartuchos2.gif', array('class' => 'img-responsive'));?>
 		</div>
 	</div>
 </div>
-<div class="col-md-8">
+<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
 	<div class="row">
 		<!--<div class="col-md-10 col-md-offset-1">-->
-		<div class="col-md-12">
+		<div class="col-lg-12 col-md-12 col-xs-12">
 			<h4 class="titulo">Excelencia e innovacióooon</h4><hr class="linea">
 			<p>
 				En Printa creemos que la excelencia y la innovación en todas las áreas de una empresa 
@@ -25,7 +25,7 @@
 	</div>
 	<div class="row">
 		<!--<div class="col-md-10 col-md-offset-1">-->
-		<div class="col-md-12">
+		<div class="col-lg-12 col-md-12 col-xs-12">
 			<h4 class="titulo">Reciclado de Cartuchos</h4><hr class="linea">
 			<p>
 				Una de las especialidades de Printa es el reciclado de cartuchos. Tenemos experiencia 
@@ -35,7 +35,7 @@
 	</div>
 </div>	
 </div>
-<div class="col-md-12">
+<div class="col-lg-12 col-md-12 col-xs-12">
 	<br><br><br><br>
 	<hr class="linea">
 	 <?php echo $this->element('marcascarousel'); ?>
