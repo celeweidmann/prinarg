@@ -31,7 +31,7 @@
 	<a href="https://maps.google.com.ar/maps?q=Boulevard+Pellegrini+2735,+Santa+Fe,+Argentina&hl=es-419&ll=-31.634657,
 				-60.700622&spn=0.011272,0.020084&sll=-31.620775,-60.701293&sspn=0.180382,0.32135&hnear=Bv.+Pellegrini+2735,
 				+Santa+Fe&t=m&z=16" target="_blank">
-		<img class="img-responsive" src="/img/mapa.jpg">
+		<img class="img-responsive mapa" src="/img/mapa.jpg">
 	</a>
 	<!--
 	<iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 

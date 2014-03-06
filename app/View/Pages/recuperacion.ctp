@@ -10,9 +10,10 @@
 	<div class="row">
 		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 			<ul class="nav nav-tabs  hidden-xs">
-  				<li><?php echo $this->Html->link("Firmware Disponible", array('controller'=>'pages', 'action'=>'firmware'), array('class'=>'pestania'))?></li>
+  				<!--<li><?php echo $this->Html->link("Preguntas Frecuentes", array('controller'=>'pages', 'action'=>'preguntas'), array('class'=>'pestania'))?></li>-->
+  				<li><?php echo $this->Html->link("Reciclado", array('controller'=>'pages', 'action'=>'reciclado'), array('class'=>'pestania'))?></li>
   				<li class="active"><?php echo $this->Html->link("Recuperación", array('controller'=>'pages', 'action'=>'recuperacion'), array('class'=>'pestania'))?></li>
-  				<li><?php echo $this->Html->link("Preguntas Frecuentes", array('controller'=>'pages', 'action'=>'preguntas'), array('class'=>'pestania'))?></li>
+  				<li><?php echo $this->Html->link("Firmware Disponible", array('controller'=>'productos', 'action'=>'buscar'), array('class'=>'pestania'))?></li>
 			</ul>
 			<h4 class="titulo visible-xs">Recuperación</h4>
 			<hr class="linea visible-xs">
@@ -81,11 +82,6 @@
     			c) Machine Serial Number: 0000-00000000000
 			
 			</p>			
-
-        	 
-
-    Si usted necesita que revisemos su caso, por favor, complete el siguiente FORMULARIO:
-
 		</div>
 	</div>
 </div>	

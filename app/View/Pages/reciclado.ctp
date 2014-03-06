@@ -1,5 +1,5 @@
 <div>
-<div class="col-lg-4 col-md-4 col-sm-3 hidden-xs">
+<div class="col-lg-3 col-md-3 col-sm-3 hidden-xs">
 	<div class="row">
 		<div class="col-lg-12 col-md-12 marcas-lista">
 	 		<!--<?php echo $this->element('marcas'); ?>-->
@@ -7,10 +7,17 @@
 		</div>
 	</div>
 </div>
-<div class="col-lg-8 col-md-8 col-sm-9 col-xs-12">
+<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
 	<div class="row">
 		<div class="col-lg-12 col-md-12">
-			<h4 class="titulo">Reciclados</h4><hr class="linea">
+			<!-- -->
+			<ul class="nav nav-tabs  hidden-xs">
+  				<li class="active"><?php echo $this->Html->link("Reciclado", array('controller'=>'pages', 'action'=>'reciclado'), array('class'=>'pestania'))?></li>
+  				<li><?php echo $this->Html->link("Recuperación", array('controller'=>'pages', 'action'=>'recuperacion'), array('class'=>'pestania'))?></li>
+  				<li><?php echo $this->Html->link("Firmware Disponible", array('controller'=>'productos', 'action'=>'buscar'), array('class'=>'pestania'))?></li>
+  				<!--<li><?php echo $this->Html->link("Preguntas Frecuentes", array('controller'=>'pages', 'action'=>'preguntas'), array('class'=>'pestania'))?></li>-->	
+			</ul><br>
+			<!--<h4 class="titulo">Reciclados</h4><hr class="linea">-->
 			<p>
 				En Printa Argentina nos especializamos en el reciclado de cartuchos de las tres 
 				tecnologías mas utilizadas: Láser-Inkjet-Matricial.<br>

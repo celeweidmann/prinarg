@@ -58,10 +58,11 @@ $cakeDescription = __d('cake_dev', 'Printa Argentina');
 					<h3 class="slogam text-right hidden-xs">Servicio y Venta de Insumos Informáticos</h3>
 				</div>			
 			</div>
-			<!--
-			<a href="https://static.siteheart.com/widget/sh/2/html/popup.html?sh_mode=chatpopup&widget_id=98611&ent_id=98611&_t=1391901420835808">
-				<img class="chat pull-right img-responsive" src="/img/chat.png">
-			</a>-->	
+			
+			<a href="https://static.siteheart.com/widget/sh/2/html/popup.html?sh_mode=chatpopup&widget_id=98611&ent_id=98611&_t=1391901420835808" target="_blank">
+				<img class="chat img-responsive hidden-xs pull-right" src="/img/chat.png">
+				<img class="chat-xs img-responsive visible-xs pull-right" src="/img/chat.png">
+			</a>	
 		</div>
 		
 	</header>
@@ -120,8 +121,8 @@ $cakeDescription = __d('cake_dev', 'Printa Argentina');
 							</div>
 							<div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
 								<address>
-									0054 - (0342) -4566748<br>
-									0054 - (0342) -156136940
+									0054 - (0342) - 4566748<br>
+									0054 - (0342) - 156136940
 								</address>
 							</div>
 						</div>

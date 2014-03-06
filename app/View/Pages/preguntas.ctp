@@ -7,6 +7,7 @@
 	</div>
 </div>
 <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+	<!--
 	<div class="row hidden-xs">
 		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 			<ul class="nav nav-tabs">
@@ -15,11 +16,14 @@
   				<li class="active"><?php echo $this->Html->link("Preguntas Frecuentes", array('controller'=>'pages', 'action'=>'preguntas'), array('class'=>'pestania'))?></li>
 			</ul>
 		</div>
-	</div>
+	</div>-->
 	<div class="row">
 		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<!--
 			<h4 class="titulo visible-xs">Preguntas Frecuentes</h4>
-			<hr class="linea visible-xs">
+			<hr class="linea visible-xs">-->
+			<h4 class="titulo">Preguntas Frecuentes</h4>
+			<hr class="linea">
 			<ol>
 				<br>
 				<li>
@@ -55,7 +59,7 @@
 					Respuesta: si su "Version Firmware" contiene una letra "f" al final, significa que alguien YA INTENTÓ desbloquearla por su cuenta utilizando 
 					archivos de procedencia DESCONOCIDA. Si aún así no puede imprimir con cartuchos (originales o alternativos) sin chip , o directamente no puede 
 					imprimir NADA, entonces usted tiene una impresora MAL DESBLOQUEADA. Si éste es SU CASO diríjase a:
-					<?php echo $this->Html->link("RECUPERACIÓN DE DESBLOQUEO", array('controller'=>'pages', 'action'=>'recuperacion'), array('class'=>'pestania btn btn-default'))?>
+					<?php echo $this->Html->link("Recuperación de Desbloqueo", array('controller'=>'pages', 'action'=>'recuperacion'), array('class'=>'pestania btn btn-default'))?>
 					<br><br>
 					Una impresora BIEN DESBLOQUEADA también contiene una letra "f" al final de la "Version Firmware", pero la DIFERENCIA es que PERMITE 
 					imprimir con cartuchos (originales o alternativos) sin chip, problemas o luz de aviso de error.
@@ -71,7 +75,7 @@
 					</div>
 					
 					Para ver casos de impresoras BIEN DESBLOQUEADAS con nuestro servicio, por favor observar las imágenes de 
-					<?php echo $this->Html->link("EJEMPLOS", array('controller'=>'pages', 'action'=>'firmware'), array('class'=>'pestania btn btn-default'))?>
+					<?php echo $this->Html->link("Ejemplos", array('controller'=>'pages', 'action'=>'firmware'), array('class'=>'pestania btn btn-default'))?>
 					</p>
 				</li><br>
 				<li>
@@ -79,10 +83,10 @@
  					¿Luego de desbloquear mi impresora se pierde alguna configuración o función?<br>
  					Respuesta: no se pierde ninguna configuración o función, usted podrá utilizar cartuchos originales, alternativos o cartuchos recargados. 
  					Para eso puede utilizar nuestro servicio de 
- 					<?php echo $this->Html->link("reciclado de cartuchos", array('controller'=>'pages', 'action'=>'reciclado'), array('class'=>'pestania btn btn-default'))?>
+ 					<?php echo $this->Html->link("Reciclado de Cartuchos", array('controller'=>'pages', 'action'=>'reciclado'), array('class'=>'pestania btn btn-default'))?>
  					<br><br>
 					Ante cualquier inquietud, no dude en comunicarse con nosotros a través de nuestros 
-					<?php echo $this->Html->link("DATOS De CONTACTO", array('controller'=>'pages', 'action'=>'contacto'), array('class'=>'pestania btn btn-default'))?>
+					<?php echo $this->Html->link("Datos de Contacto", array('controller'=>'contactos', 'action'=>'index'), array('class'=>'pestania btn btn-default'))?>
  					</p>					
 				</li>				
 			</ol>
