@@ -41,28 +41,41 @@
 }
 
 /* line 40, ../sass/layout.sass */
-.chat {
+.chat, .chat-xs {
+  opacity: 0.2;
   position: fixed;
   right: 0px;
   top: 210px;
   z-index: 100;
 }
 
-/* line 46, ../sass/layout.sass */
+/* line 47, ../sass/layout.sass */
+.chat-xs {
+  width: 80px;
+}
+
+/* line 51, ../sass/layout.sass */
+.chat:hover, .chat-xs:hover,
+.chat:focus,
+.chat-xs:focus {
+  opacity: 0.8;
+}
+
+/* line 55, ../sass/layout.sass */
 .contacto {
   font-size: 12pt;
 }
 
-/* line 49, ../sass/layout.sass */
+/* line 58, ../sass/layout.sass */
 .dropdown-menu {
   background-color: #617c6d !important;
-  min-width: 280px !important;
+  min-width: 230px !important;
   padding: 2px;
   text-align: center;
   border-top-width: 4px !important;
 }
 
-/* line 56, ../sass/layout.sass */
+/* line 65, ../sass/layout.sass */
 .footer {
   background-color: #96968a;
   color: white;
@@ -72,22 +85,28 @@
   padding-top: 40px;
 }
 
-/* line 67, ../sass/layout.sass */
+/* line 76, ../sass/layout.sass */
 .frase-listado {
   font-size: 12px;
 }
 
-/* line 70, ../sass/layout.sass */
+/* line 79, ../sass/layout.sass */
 .horario {
   margin-top: 10px;
 }
 
-/* line 74, ../sass/layout.sass */
+/* line 83, ../sass/layout.sass */
 .logo {
   padding-top: 45px;
 }
 
-/* line 77, ../sass/layout.sass */
+/* line 86, ../sass/layout.sass */
+.mapa {
+  max-width: 900px;
+  display: inline !important;
+}
+
+/* line 90, ../sass/layout.sass */
 .marcas {
   margin: 0 auto;
   padding-left: 5px;
@@ -96,49 +115,53 @@
   padding-bottom: 40px;
 }
 
-/* line 85, ../sass/layout.sass */
+/* line 98, ../sass/layout.sass */
 .marcas-lista {
   margin-top: 40px;
 }
 
-/* line 88, ../sass/layout.sass */
+/* line 101, ../sass/layout.sass */
+.nota {
+  color: #d4d6b0;
+}
+
+/* line 104, ../sass/layout.sass */
 .submenu {
   font-family: "offside";
   color: white;
 }
 
-/* line 92, ../sass/layout.sass */
+/* line 108, ../sass/layout.sass */
 .submenu:hover,
 .submenu:focus {
-  color: white;
-  background-color: #29362f;
+  color: #b5b97a;
   text-decoration: none;
 }
 
-/* line 98, ../sass/layout.sass */
+/* line 114, ../sass/layout.sass */
 .menu-principal {
   font-family: "offside";
   color: white;
 }
 
-/* line 102, ../sass/layout.sass */
+/* line 118, ../sass/layout.sass */
 .nav-xs {
   background-color: #617c6d;
 }
 
-/* line 105, ../sass/layout.sass */
+/* line 121, ../sass/layout.sass */
 .navbar-default .navbar-nav > li > a {
   color: white;
 }
 
-/* line 108, ../sass/layout.sass */
+/* line 124, ../sass/layout.sass */
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
   color: white;
   background-color: transparent;
 }
 
-/* line 113, ../sass/layout.sass */
+/* line 129, ../sass/layout.sass */
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
@@ -146,46 +169,46 @@
   color: #b5b97a;
 }
 
-/* line 119, ../sass/layout.sass */
+/* line 135, ../sass/layout.sass */
 .navbar-right {
   padding-right: 10px;
 }
 
-/* line 123, ../sass/layout.sass */
+/* line 139, ../sass/layout.sass */
 .navbar-toggle {
   margin-top: 3px !important;
 }
 
-/* line 126, ../sass/layout.sass */
+/* line 142, ../sass/layout.sass */
 .navbar-toggle:hover,
 .navbar-toggle:focus {
   background-color: #96968a !important;
 }
 
-/* line 130, ../sass/layout.sass */
+/* line 146, ../sass/layout.sass */
 .slogam {
   font-family: "offside";
   margin-top: 80px;
 }
 
-/* line 135, ../sass/layout.sass */
+/* line 151, ../sass/layout.sass */
 .titulo {
   font-family: "offside";
 }
 
-/* line 138, ../sass/layout.sass */
+/* line 154, ../sass/layout.sass */
 .pestania {
   color: #617c6d;
   font-family: "offside";
 }
 
-/* line 144, ../sass/layout.sass */
+/* line 160, ../sass/layout.sass */
 .pestania:hover,
 .pestania:focus {
   color: #617c6d;
 }
 
-/* line 148, ../sass/layout.sass */
+/* line 164, ../sass/layout.sass */
 .jumbotrone {
   padding: 30px;
   margin-bottom: 15px;
@@ -199,7 +222,7 @@
   padding-top: 10px;
 }
 
-/* line 161, ../sass/layout.sass */
+/* line 177, ../sass/layout.sass */
 .linea {
   border-top: 3px solid #b5b97a;
   color: #b5b97a;
@@ -207,7 +230,7 @@
   margin-top: -4px;
 }
 
-/* line 168, ../sass/layout.sass */
+/* line 184, ../sass/layout.sass */
 .linea-corta {
   border-top: 3px solid #d4d6b0;
   color: #d4d6b0;
@@ -215,18 +238,18 @@
   margin-top: -8px;
 }
 
-/* line 175, ../sass/layout.sass */
+/* line 191, ../sass/layout.sass */
 address {
   font-family: "offside";
 }
 
-/* line 179, ../sass/layout.sass */
+/* line 195, ../sass/layout.sass */
 ol {
   font-family: "quattro";
   font-size: 13pt;
 }
 
-/* line 184, ../sass/layout.sass */
+/* line 200, ../sass/layout.sass */
 p {
   font-family: "quattro";
   font-size: 13pt;
