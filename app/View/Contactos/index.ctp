@@ -61,12 +61,13 @@
 			<?php
 				echo '<div class="form-group col-lg-12 col-md-12"><label>Cliente</label>'.$this->Form->input('Model.cliente', array(
     																			'type' => 'select',
+    																			'name' => 'tipocliente',
     																			'label' => '',
     																			'multiple' => 'checkbox',
     																			'options' => array(
-            																		'Value 1' => 'Consumidor Final',
-            																		'Value 2' => 'Empresa',
-            																		'Value 3' => 'Institución'
+            																		'cliente 1' => 'Consumidor Final',
+            																		'cliente 2' => 'Empresa',
+            																		'cliente 3' => 'Institución'
     																			), 'class'=>'checkbox-inline'
 																			)).'</div>';
 			
@@ -90,11 +91,11 @@
                                             'error' => array('attributes' => array('wrap' => 'div', 'class' => 'alert alert-error'))
                                            )).'</div>';
 				
-				echo '<div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">'.$this->Form->input( 'ciudad', array('value'=>'', 'type'=>'email', 'class'=>'required form-control',
+				echo '<div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">'.$this->Form->input( 'ciudad', array('value'=>'', 'type'=>'text', 'class'=>'required form-control',
                                             'placeholder' => 'Ciudad',
                                             'error' => array('attributes' => array('wrap' => 'div', 'class' => 'alert alert-error')) )).'</div>';
             
-				echo '<div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">'.$this->Form->input( 'cp', array('label'=>'C.P.', 'value'=>'', 'type'=>'email', 'class'=>'required form-control',
+				echo '<div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">'.$this->Form->input( 'cp', array('label'=>'C.P.', 'value'=>'', 'type'=>'text', 'class'=>'required form-control',
                                             'placeholder' => 'Código Postal',
                                             'error' => array('attributes' => array('wrap' => 'div', 'class' => 'alert alert-error')) )).'</div>';
 			
@@ -116,14 +117,15 @@
                                             'error' => array('attributes' => array('wrap' => 'div', 'class' => 'alert alert-error'))
                                             )).'</div>';
 											
-				echo '<div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12"><label>Medio de Contacto</label>'.$this->Form->input('Model.cliente', array(
+				echo '<div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12"><label>Medio de Contacto</label>'.$this->Form->input('Model.medio', array(
     																			'type' => 'select',
+    																			'name' => 'tipomedio',
     																			'label' => '',
     																			'multiple' => 'checkbox',
     																			'options' => array(
-            																		'Value 1' => 'telefono',
-            																		'Value 2' => 'celular',
-            																		'Value 3' => 'e-mail'
+            																		'medio 1' => 'telefono',
+            																		'medio 2' => 'celular',
+            																		'medio 3' => 'e-mail'
     																			), 'class'=>'checkbox-inline'
 																			)).'</div>';
 			
@@ -134,10 +136,7 @@
 					</button>
 				</div>
 			</form>
-			
-			<!--<form class="form-horizontal" role="form">-->
 			<?php
-                //echo $this->Form->create('Contacto',array('url' => array('controller'=>'contactos', 'action'=>'index' ,  'model'=> 'false')));
                 echo $this->Form->create('Contactos',array('url' => array('controller'=>'contactos', 'action'=>'index' ,  'model'=> 'false'), 'class'=>'form-horizontal'));
             ?>
 			</div>
