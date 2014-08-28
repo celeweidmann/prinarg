@@ -27,6 +27,9 @@ $verde-claro: #b5b97a
 
 .caja-preguntas
   background-color: $gris
+  font:
+    family: "quattro"
+    size: 13pt
   padding: 15px
   margin:
     bottom: 15px
@@ -38,17 +41,26 @@ $verde-claro: #b5b97a
   padding: 10px
 
 .chat
+  opacity: 0.2
   position: fixed
   right: 0px
   top: 210px
   z-index: 100
+
+.chat-xs
+  @extend .chat
+  width: 80px 
+
+.chat:hover,
+.chat:focus
+  opacity: 0.8
 
 .contacto
   font-size: 12pt
 
 .dropdown-menu
   background-color: $verde !important
-  min-width: 280px !important
+  min-width: 230px !important
   padding: 2px
   text-align: center
   border-top-width: 4px !important
@@ -74,6 +86,10 @@ $verde-claro: #b5b97a
 .logo
   padding-top: 45px
 
+.mapa
+  max-width: 900px
+  display: inline !important
+
 .marcas
   margin: 0 auto
   padding:
@@ -85,14 +101,17 @@ $verde-claro: #b5b97a
 .marcas-lista
   margin-top: 40px
 
+.nota
+  color: $gris
+
 .submenu
   font-family: "offside"
   color: $blanco
 
 .submenu:hover,
 .submenu:focus
-  color: $blanco
-  background-color: $verde-oscuro
+  color: $verde-claro
+  //background-color: $verde-oscuro
   text-decoration: none
 
 .menu-principal
@@ -172,6 +191,13 @@ $verde-claro: #b5b97a
     bottom: 10px
     top: -8px
 
+.linea-ejemplos
+  border-top: 3px solid $verde-claro
+  color: $verde-claro
+  margin:
+    bottom: 20px
+    top: 1px
+
 address
   font:
     family: "offside"
@@ -186,3 +212,28 @@ p
     family: "quattro"
     size: 13pt
   text-align: justify
+  
+/* Site Heart */
+.sh_chat_logo
+  width: 0px
+
+.sh_header_logo
+  width: 10px !important
+
+.sh_logo
+  width: 0px !important
+
+.sh_logo_btn
+  width: 0px
+  font-family: "offside"
+
+.sh_title
+  font-family: "offside" !important
+  font-size: 1em !important
+
+.sh_title_text
+  border-left: none
+
+.sh_btn_top .sh_title_text, .sh_btn_bottom .sh_title_text
+  font-family: "offside"
+  font-size: 1em !important
