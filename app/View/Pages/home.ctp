@@ -23,9 +23,12 @@
 				deben ser constantes.
 				Por ésto concentramos nuestro esfuerzo, en comercializar los mejores productos, 
 				seleccionando los mejores proveedores, acompañados con la actualización constante 
-				de nuestros recursos humanos.
-				Los invitamos a comprobar estas premisas y nuestro asesoramiento comercial y técnico, 
-				los cuales harán de su compra un trámite sencillo, rápido y agradable.
+				de nuestros recursos humanos.<br>
+				Lo invitamos a contactarse con nosotros para poder asistirlo ante cualquier inquietud que
+				tenga sobre nuestros productos o modelos de los cuales necesite cotización. 
+				<b>No dude en comunicarse.</b>
+				<!--Los invitamos a comprobar estas premisas y nuestro asesoramiento comercial y técnico, 
+				los cuales harán de su compra un trámite sencillo, rápido y agradable.-->
 			</p>
 		</div>
 	</div>

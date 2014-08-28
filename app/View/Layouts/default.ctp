@@ -58,11 +58,16 @@ $cakeDescription = __d('cake_dev', 'Printa Argentina');
 					<h3 class="slogam text-right hidden-xs">Servicio y Venta de Insumos Informáticos</h3>
 				</div>			
 			</div>
-			
-			<a href="https://static.siteheart.com/widget/sh/2/html/popup.html?sh_mode=chatpopup&widget_id=98611&ent_id=98611&_t=1391901420835808" target="_blank">
-				<img class="chat img-responsive hidden-xs pull-right" src="/img/chat.png">
-				<img class="chat-xs img-responsive visible-xs pull-right" src="/img/chat.png">
-			</a>	
+			<!--
+			<a onclick="o=window.open;o('https://siteheart.com/webconsultation/98611?', 'siteheart_sitewindow_98611', 'width=550,height=400,top=30,left=30,resizable=yes'); return false;" href="https://siteheart.com/webconsultation/98611?" target="siteheart_sitewindow_98611">
+				<img src="http://webindicator.siteheart.com/webindicator/image/1402180667?ent=98611&company=98611" border="0" alt="SiteHeart" class="chat img-responsive hidden-xs pull-right"/>
+				<img src="http://webindicator.siteheart.com/webindicator/image/1402180667?ent=98611&company=98611" border="0" alt="SiteHeart" class="chat-xs img-responsive visible-xs pull-right"/>
+			</a>-->
+			<!--
+			<a onclick="o=window.open;o('https://siteheart.com/webconsultation/710516?', 'siteheart_sitewindow_710516', 'width=550,height=400,top=30,left=30,resizable=yes'); return false;" href="https://siteheart.com/webconsultation/710516?" target="siteheart_sitewindow_710516">
+				<img src="http://webindicator.siteheart.com/webindicator/image/1402180667?ent=710516&company=710516" border="0" alt="SiteHeart" class="chat img-responsive hidden-xs pull-right"/>
+				<img src="http://webindicator.siteheart.com/webindicator/image/1402180667?ent=710516&company=710516" border="0" alt="SiteHeart" class="chat-xs img-responsive visible-xs pull-right"/>
+			</a>-->
 		</div>
 		
 	</header>
@@ -132,5 +137,33 @@ $cakeDescription = __d('cake_dev', 'Printa Argentina');
 		</footer>	
 	</div>
 	<?php echo $this->element('sql_dump'); ?>
+	    <!-- Start SiteHeart code -->
+	 
+    <script>
+    (function(){
+    // your widget ID
+    var widget_id = 710516;
+    _shcp = [{widget_id : widget_id}];
+    // set default language
+    var lang = (navigator.language || navigator.systemLanguage
+    || navigator.userLanguage || "en")
+    .substr(0, 2).toLowerCase();
+    // script url
+    var url = "widget.siteheart.com/widget/sh/" + widget_id + "/"
+    + lang + "/widget.js";
+    var hcc = document.createElement("script");
+    hcc.type = "text/javascript";
+    hcc.async = true;    
+    hcc.src = ("https:" == document.location.protocol ? "https" : "http")
+    + "://" + url;
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hcc, s.nextSibling);
+    })();
+    </script>
+    <!-- End SiteHeart code -->
 </body>
 </html>
+
+
+
+

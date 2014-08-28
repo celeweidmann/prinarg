@@ -14,7 +14,7 @@
 			<ul class="nav nav-tabs  hidden-xs">
   				<li class="active"><?php echo $this->Html->link("Reciclado", array('controller'=>'pages', 'action'=>'reciclado'), array('class'=>'pestania'))?></li>
   				<li><?php echo $this->Html->link("Recuperación", array('controller'=>'pages', 'action'=>'recuperacion'), array('class'=>'pestania'))?></li>
-  				<li><?php echo $this->Html->link("Firmware Disponible", array('controller'=>'productos', 'action'=>'buscar'), array('class'=>'pestania'))?></li>
+  				<li><?php echo $this->Html->link("Firmware Disponible / Recarga de Cartuchos", array('controller'=>'productos', 'action'=>'buscar'), array('class'=>'pestania'))?></li>
   				<!--<li><?php echo $this->Html->link("Preguntas Frecuentes", array('controller'=>'pages', 'action'=>'preguntas'), array('class'=>'pestania'))?></li>-->	
 			</ul><br>
 			<!--<h4 class="titulo">Reciclados</h4><hr class="linea">-->
@@ -48,18 +48,22 @@
 				compromiso y lo asesoraremos en esa decisión que afectará su trabajo, economía y productividad 
 				en los próximos 2 años.
 				<br>
+				<!--
 				Muchas veces recibimos consultas de nuestros clientes sobre que impresora adquirir, cuál tecnología 
 				sería recomendable para su trabajo o cuál marca podría ser la recomendable, entre otras.
+				-->
+				Muchas veces recibimos consultas de nuestros clientes sobre que impresora adquirir y que tecnología 
+				o marca sería recomendable para su trabajo, entre otras.
 				<br>
-				Generalmente cuanto se adquiere una impresora en cualquier ambiente de trabajo o en el hogar se 
+				Generalmente cuando se adquiere una impresora en cualquier ambiente de trabajo o en el hogar se 
 				tienen en cuenta algunos factores como: precio INICIAL, consejos de amigos, stock del vendedor, 
-				preferencia de marcas, estética, etc. . Quedando algunos factores fuera de la evaluación, como:
+				preferencia de marcas, estética, etc. Quedando algunos factores fuera de la evaluación, como:
 			</p>
 			<ol>
 				<li>Robustez del equipo (el ciclo de trabajo mensual)</li>
 				<li>Precio de los insumos (originales y la posibilidad de reciclarlos)</li>
 				<li>Cantidad de hojas a imprimir por mes (volumen de tinta o tóner del cartucho).</li>
-				<li>Necesidad de Imprimir en color.</li>
+				<li>Necesidad de imprimir en color.</li>
 				<li>Necesidad de una impresora láser o inkjet de alto rendimiento.</li>
 				<li>Tipo y tamaño de papel a imprimir.</li>
 				<li>Necesidad de escáner en la misma impresora.</li>

@@ -75,7 +75,7 @@
 					</div>
 					
 					Para ver casos de impresoras BIEN DESBLOQUEADAS con nuestro servicio, por favor observar las imágenes de 
-					<?php echo $this->Html->link("Ejemplos", array('controller'=>'pages', 'action'=>'firmware'), array('class'=>'pestania btn btn-default'))?>
+					<?php echo $this->Html->link("Ejemplos", array('controller'=>'pages', 'action'=>'ejemplos'), array('class'=>'pestania btn btn-default'))?>
 					</p>
 				</li><br>
 				<li>

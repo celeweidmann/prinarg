@@ -5,6 +5,10 @@ class ContactosController extends AppController {
     public $name = 'Contactos';
     var $components = array('Email');
 
+	/**
+	 * index method
+	 *
+	 */
     public function index(){
     	$this->layout = 'default';
 		
@@ -64,13 +68,12 @@ class ContactosController extends AppController {
                 	# Envia la consulta al mail de Ventas de Printa Argentina
                     # ventas@printaargentina.com.ar
                     $to = 'ventas@printaargentina.com.ar';
-										
+                    					
 					# Armo el mensaje para enviar al mail.   
                     $mensaje = 	'Tipo de consulta: Página de Contacto de Printa Argentina'."\n\n".
                     			'Enviado por: '.$this->data['Contacto']['nombre'].' '.$this->data['Contacto']['apellido']."\n".
-                               	'Tipo de cliente: '.$tipocliente."\n".
-                               	'Mail de contacto: '.$this->data['Contacto']['email']."\n".                               
-                               	'Datos de envio:'."\n".
+                               	'Tipo de cliente: '.$tipocliente."\n\n".
+                               	'Datos de envio'."\n".
                                	'Dirección de Envío: '.$this->data['Contacto']['direccionenvio']."\n".
                                	'Dirección de Facturación: '.$this->data['Contacto']['direccionfacturacion']."\n".
                                	'Ciudad: '.$this->data['Contacto']['ciudad']." - C.P.:".$this->data['Contacto']['cp']."\n".

@@ -18,7 +18,7 @@
 			    		</a>
 			    		<ul class="dropdown-menu">
 			    			<ul class="list-unstyled">
-			      				<li><?php echo $this->Html->link("Firmware Disponible", array('controller'=>'pages', 'action'=>'firmware'), array( 'class' => 'submenu'))?></li>
+			      				<li><?php echo $this->Html->link("Firmware Disponible / Recarga de Cartuchos", array('controller'=>'pages', 'action'=>'firmware'), array( 'class' => 'submenu'))?></li>
 			      				<li><?php echo $this->Html->link("Reciclados", array('controller'=>'pages', 'action'=>'reciclado'), array( 'class' => 'submenu'))?></li>
 			      				<li><?php echo $this->Html->link("Recuperación", array('controller'=>'pages', 'action'=>'recuperacion'), array( 'class' => 'submenu'))?></li>
 			      				<li><?php echo $this->Html->link("Preguntas Frecuentes", array('controller'=>'pages', 'action'=>'preguntas'), array( 'class' => 'submenu'))?></li>

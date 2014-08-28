@@ -13,7 +13,7 @@
   				<!--<li><?php echo $this->Html->link("Preguntas Frecuentes", array('controller'=>'pages', 'action'=>'preguntas'), array('class'=>'pestania'))?></li>-->
   				<li><?php echo $this->Html->link("Reciclado", array('controller'=>'pages', 'action'=>'reciclado'), array('class'=>'pestania'))?></li>
   				<li class="active"><?php echo $this->Html->link("Recuperación", array('controller'=>'pages', 'action'=>'recuperacion'), array('class'=>'pestania'))?></li>
-  				<li><?php echo $this->Html->link("Firmware Disponible", array('controller'=>'productos', 'action'=>'buscar'), array('class'=>'pestania'))?></li>
+  				<li><?php echo $this->Html->link("Firmware Disponible / Recarga de Cartuchos", array('controller'=>'productos', 'action'=>'buscar'), array('class'=>'pestania'))?></li>
 			</ul>
 			<h4 class="titulo visible-xs">Recuperación</h4>
 			<hr class="linea visible-xs">
