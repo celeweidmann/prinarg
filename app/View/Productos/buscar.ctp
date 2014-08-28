@@ -7,12 +7,15 @@
 					<fieldset>
 						<legend><h4 class="titulo"><?php echo __('Buscar'); ?></h4></legend>
 						<div class="form-group">
-							<?php echo $this->Form->input('marca_id', array('empty' => 'todas las marcas', 'class'=>'form-control', 'onchange'=>'submit();javascript:limpiar()'));?>
+							<?php echo $this->Form->input('marca_id', array('empty' => 'todas las marcas', 'class'=>'form-control', 
+								'onchange'=>'submit();javascript:limpiar()'));?>
 						</div>
 						<?php if ($this->data['Producto']['marca_id'] != ''){
 								echo '<div class="form-group">';
-								echo $this->Form->input('modelo_id', array('empty' => 'todos los modelos', 'class'=>'form-control', 'onchange'=>'submit()', 'id'=>'elmodelo'));
-								
+								/*echo $this->Form->input('modelo_id', array('empty' => 'todos los modelos', 'class'=>'form-control', 
+									'onchange'=>'submit()', 'id'=>'elmodelo'));*/
+								echo ($this->Form->input('modelo_id', array('empty' => 'todos los modelos', 'class'=>'form-control', 
+									'onchange'=>'submit()', 'id'=>'elmodelo', 'order'=>array('modelo', 'asc'))));
 								echo '</div>'; 
 								}
 							?>
@@ -27,7 +30,7 @@
 			<ul class="nav nav-tabs  hidden-xs">
   				<li><?php echo $this->Html->link("Reciclados", array('controller'=>'pages', 'action'=>'reciclado'), array('class'=>'pestania'))?></li>
   				<li><?php echo $this->Html->link("Recuperación", array('controller'=>'pages', 'action'=>'recuperacion'), array('class'=>'pestania'))?></li>
-  				<li class="active"><?php echo $this->Html->link("Firmware Disponible", array('controller'=>'pages', 'action'=>'firmware'), array('class'=>'pestania'))?></li>		
+  				<li class="active"><?php echo $this->Html->link("Firmware Disponible / Recarga de Cartuchos", array('controller'=>'pages', 'action'=>'firmware'), array('class'=>'pestania'))?></li>		
 			</ul>
 			<div class="col-xs-12 visible-xs">
 				<h4 class="titulo">Firmware Disponible</h4>
