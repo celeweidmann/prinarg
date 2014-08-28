@@ -51,11 +51,15 @@ class ProductosController extends AppController {
 				//debug($json_a);
 				//$results = Set::sort($json_a, '{n}.Marca.marca', 'asc');
 				//$results = Set::sort($results, '{n}.Modelo.modelo', 'asc');
-				$results = Set::sort($json_a, '{n}.Modelo.modelo', 'asc');
+				
+				//$results = Set::sort($json_a, '{n}.Modelo.modelo', 'asc');
+				$results = Set::sort($json_a, '{n}.Version.version', 'asc');
+				$results = Set::sort($results, '{n}.Modelo.modelo', 'asc');
 				$this->set('productosListado', $results);
 				//$this->set('productosListado', $json_a);
 			} else {
 				$results = Set::sort($json_a, '{n}.Marca.marca', 'asc');
+				$results = Set::sort($results, '{n}.Version.version', 'asc'); //ordena version
 				$results = Set::sort($results, '{n}.Modelo.modelo', 'asc');
 				$this->set('productosListado', $results);
 				//$this->set('productosListado', $json_a);
@@ -105,6 +109,7 @@ class ProductosController extends AppController {
 						}
 					}
 					$results = Set::sort($productosListado, '{n}.Marca.marca', 'asc');
+					$results = Set::sort($results, '{n}.Version.version', 'asc'); //ordeno version
 					$results = Set::sort($results, '{n}.Modelo.modelo', 'asc');
 					$this->set('productosListado', $results);
 				
@@ -129,6 +134,7 @@ class ProductosController extends AppController {
 							}
 						}
 						$results = Set::sort($productosListado, '{n}.Marca.marca', 'asc');
+						$results = Set::sort($results, '{n}.Version.version', 'asc'); //ordeno version
 						$results = Set::sort($results, '{n}.Modelo.modelo', 'asc');
 						$this->set('productosListado', $results);
 						//$this->set('productosListado', $productosListado);
