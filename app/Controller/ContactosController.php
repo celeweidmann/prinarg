@@ -77,8 +77,8 @@ class ContactosController extends AppController {
                                	'Dirección de Envío: '.$this->data['Contacto']['direccionenvio']."\n".
                                	'Dirección de Facturación: '.$this->data['Contacto']['direccionfacturacion']."\n".
                                	'Ciudad: '.$this->data['Contacto']['ciudad']." - C.P.:".$this->data['Contacto']['cp']."\n".
-                               	'Teléfono: '.$this->data['Contacto']['telephone']."\n".
-                               	'Celular: '.$this->data['Contacto']['telephone']."\n".
+                               	'Teléfono: '.$this->data['Contacto']['telephone-area'].'-'.$this->data['Contacto']['telephone']."\n".
+                               	'Celular: '.$this->data['Contacto']['celular-area'].'-'.$this->data['Contacto']['celular']."\n".
                                	'Email: '.$this->data['Contacto']['email']."\n\n".
                                	'Medio de contacto: '.$mediocontacto."\n\n".   
 								'Consulta: '."\n".$this->data['Contacto']['consulta'];

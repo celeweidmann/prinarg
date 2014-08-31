@@ -1,9 +1,5 @@
 <div>
 	<div class="col-lg-4 col-md-4 col-sm-3 col-xs-12">
-		<!--
-		<div class="horario col-md-10 col-md-offset-1">
-			<h4 class="titulo text-center">Horario de atención:<br><br>09:00 hs<br><br>a<br><br>17:00 hs</h4>
-		</div>-->
 		<div class="horario col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">
 			<img class="img-responsive" src="/img/horario_atencion.png"/>
 		</div>
@@ -99,13 +95,24 @@
                                             'placeholder' => 'Código Postal',
                                             'error' => array('attributes' => array('wrap' => 'div', 'class' => 'alert alert-error')) )).'</div>';
 			
-				echo '<div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">'.$this->Form->input( 'telephone', array('label'=>'Teléfono', 'value'=>'', 'type'=>'text', 'class'=>'required form-control',
-                                            'placeholder' => 'Teléfono',
+			
+			
+				echo '<div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-4">'.$this->Form->input( 'telephone-area', array( 
+										'value'=>'', 'label'=>'Teléfono', 'type'=>'numeric', 'class'=>'required form-control','placeholder' => 'Area',
                                             'error' => array('attributes' => array('wrap' => 'div', 'class' => 'alert alert-error')) )).'</div>';
             
-				echo '<div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">'.$this->Form->input( 'celular', array('value'=>'', 'type'=>'text', 'class'=>'required form-control',
-                                            'placeholder' => 'Celular',
+				echo '<div class="form-group col-lg-8 col-md-8 col-sm-8 col-xs-8">'.$this->Form->input( 'telephone', array(
+										 'value'=>'', 'label'=>'&nbsp', 'type'=>'numeric', 'class'=>'required form-control','placeholder' => 'Teléfono',
                                             'error' => array('attributes' => array('wrap' => 'div', 'class' => 'alert alert-error')) )).'</div>';
+		
+				echo '<div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-4">'.$this->Form->input( 'celular-area', array(
+										'value'=>'', 'label'=>'Celular', 'type'=>'numeric', 'class'=>'required form-control', 'placeholder' => 'Area',
+                                            'error' => array('attributes' => array('wrap' => 'div', 'class' => 'alert alert-error')) )).'</div>';
+				
+				echo '<div class="form-group col-lg-8 col-md-8 col-sm-8 col-xs-8">'.$this->Form->input( 'celular', array(
+										'value'=>'', 'label'=> '&nbsp','type'=>'numeric', 'class'=>'required form-control','placeholder' => 'Celular',
+                                            'error' => array('attributes' => array('wrap' => 'div', 'class' => 'alert alert-error')) )).'</div>';
+			
 			
                 echo '<div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">'.$this->Form->input( 'email', array('value'=>'', 'type'=>'email', 'class'=>'required form-control',
                                             'placeholder' => 'Aqui su dirección de correo',
