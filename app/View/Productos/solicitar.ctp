@@ -28,7 +28,7 @@
 			<ul class="nav nav-tabs  hidden-xs">
   				<li><?php echo $this->Html->link("Reciclados", array('controller'=>'pages', 'action'=>'reciclado'), array('class'=>'pestania'))?></li>
   				<li><?php echo $this->Html->link("Recuperación", array('controller'=>'pages', 'action'=>'recuperacion'), array('class'=>'pestania'))?></li>
-  				<li class="active"><?php echo $this->Html->link("Firmware Disponible", array('controller'=>'pages', 'action'=>'firmware'), array('class'=>'pestania'))?></li>		
+  				<li class="active"><?php echo $this->Html->link("Firmware Disponible / Recarga de Cartuchos", array('controller'=>'pages', 'action'=>'firmware'), array('class'=>'pestania'))?></li>		
 			</ul>
 			<div class="col-xs-12 visible-xs">
 				<h4 class="titulo">Firmware Disponible</h4>
@@ -52,12 +52,12 @@
 
 				<?php 
 					$url = Router::url( $this->here, true );
-					$pieces = explode('/', $url);
-							
+					$pieces = explode('/', $url, 6);
+					$modelo = explode('(', $pieces[5]);
+					$modelo = str_replace("%20", " ", $modelo);
+					
 					echo '&nbsp<b>Marca:</b> '.$pieces[4].'</br>';			
-					echo '&nbsp<b>Modelo:</b> '.$pieces[5];
-					
-					
+					echo '&nbsp<b>Modelo:</b> '.$modelo['0'].'</br>';
 				?>
 				</p>
 				
@@ -69,8 +69,8 @@
                 					'model'=> 'false'), 
                 				'class'=>'form-horizontal col-lg-10 col-md-10 col-lg-offset-1 col-md-offset-1'));
             	?>
-		  			<?php echo $this->Form->input('email', array('class'=>'form-control', 'type'=>'email','placeholder'=>'tu email' ,'div' => 'form-group'));?>
-		  			<?php echo $this->Form->input('telefono', array('class'=>'form-control', 'type'=>'number','placeholder'=>'tu teléfono','div' => 'form-group' ));?>
+		  			<?php echo $this->Form->input('email', array('class'=>'form-control', 'type'=>'email','placeholder'=>'tu email', 'required'=>'required' ,'div' => 'form-group'));?>
+		  			<?php echo $this->Form->input('telefono', array('class'=>'form-control', 'type'=>'text','placeholder'=>'tu teléfono', 'required'=>'required', 'div' => 'form-group' ));?>
 					<?php echo $this->Form->input('marca', array('type' => 'hidden', 'value' =>$marca));?>
 					<?php echo $this->Form->input('modelo', array('type' => 'hidden', 'value' => $modelo));?>
 				<button type="submit" class="btn btn-formulario">Enviar</button>
