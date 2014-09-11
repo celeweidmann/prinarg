@@ -23,6 +23,23 @@
 			</div>
 		</div>
 	</div>
+	<div class="row">
+		<br>
+		<legend><h4 class="titulo-nuevos"><?php echo __('Mirá los nuevos productos'); ?></h4></legend>
+		<div class="col-lg-12 col-md-12 col-sm-12 col-sm-12 scroll">
+			<table class="table table-striped">
+				<?php
+					foreach ($productosnuevos as $productoNuevo) {
+						echo '<tr>';
+						echo '<td>'	.$productoNuevo['Marca']['marca'].'-'
+									.$productoNuevo['Modelo']['modelo'].'-'
+									.$productoNuevo ['Version']['version'].'</td>';
+						echo '</tr>';
+					}
+				?>	
+			</table>
+		</div>
+	</div>
 </div>
 <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
 	<div class="row">
@@ -30,7 +47,7 @@
 			<ul class="nav nav-tabs  hidden-xs">
   				<li><?php echo $this->Html->link("Reciclados", array('controller'=>'pages', 'action'=>'reciclado'), array('class'=>'pestania'))?></li>
   				<li><?php echo $this->Html->link("Recuperación", array('controller'=>'pages', 'action'=>'recuperacion'), array('class'=>'pestania'))?></li>
-  				<li class="active"><?php echo $this->Html->link("Firmware Disponible / Recarga de Cartuchos", array('controller'=>'pages', 'action'=>'firmware'), array('class'=>'pestania'))?></li>		
+  				<li class="active"><?php echo $this->Html->link("Firmware Disponible / Recarga de Cartuchos", array('controller'=>'productos', 'action'=>'buscar'), array('class'=>'pestania'))?></li>		
 			</ul>
 			<div class="col-xs-12 visible-xs">
 				<h4 class="titulo">Firmware Disponible</h4>
@@ -64,16 +81,11 @@
 			</div>
 		</div>
 	</div>
-	<div class="row">
-		<div class="col-lg-12 col-md-12 col-sm-12">
-		</div>
-	</div>
 </div>	
 </div>
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 	<br><br><br><br>
-	<hr class="linea">
-	 <?php echo $this->element('marcascarousel'); ?>
+	<hr class="linea"><?php echo $this->element('marcascarousel'); ?>
 </div>
 
 <!-- Modal -->
@@ -96,7 +108,6 @@
 		  			</div>
 		  			<div>
 		  				<?php echo $producto['Marca']['marca'] .' - '.$producto['Modelo']['modelo'];?>
-		  				
 		  				<?php echo $this->data['Producto']['id_marca'];?>
 		  			</div>
 				</form>
