@@ -1,9 +1,8 @@
 <?php
-
 class ProductosController extends AppController {
-    public $name = 'Productos';
+	public $name = 'Productos';
     var $helpers = array('Session');
-    
+
 	/**
 	 * index method
 	 *
@@ -15,13 +14,11 @@ class ProductosController extends AppController {
 		$json_a = json_decode($string, true);
 		
 		$this->set('productos', $json_a);
-		
 		foreach ($json_a as $elemento) {
 			$marcas[] = $elemento['Marca']['marca'];
 			$modelos[] = $elemento['Modelo']['modelo'];
-			$versions[] = $elemento['Version']['version'];		
+			$versions[] = $elemento['Version']['version'];
     	}
-		
 		$marcas =  array_unique($marcas);
 		$modelos =  arsort(array_unique($modelos));
 		$versions =  array_unique($versions);
@@ -29,8 +26,7 @@ class ProductosController extends AppController {
 		$this->set('modelos', $modelos);
 		$this->set('versions', $versions);
 	}
-
-		
+	
 	/**
 	 * buscar method
 	 *
@@ -48,11 +44,6 @@ class ProductosController extends AppController {
 		# Si no seleccionó ninguna opción, muestra todos los elementos.
 		if(	$this->data['Producto']['marca_id']=='') {
 			if($this->data['Producto']['modelo_id']==''){
-				//debug($json_a);
-				//$results = Set::sort($json_a, '{n}.Marca.marca', 'asc');
-				//$results = Set::sort($results, '{n}.Modelo.modelo', 'asc');
-				
-				//$results = Set::sort($json_a, '{n}.Modelo.modelo', 'asc');
 				$results = Set::sort($json_a, '{n}.Version.version', 'asc');
 				$results = Set::sort($results, '{n}.Modelo.modelo', 'asc');
 				$this->set('productosListado', $results);
@@ -62,7 +53,6 @@ class ProductosController extends AppController {
 				$results = Set::sort($results, '{n}.Version.version', 'asc'); //ordena version
 				$results = Set::sort($results, '{n}.Modelo.modelo', 'asc');
 				$this->set('productosListado', $results);
-				//$this->set('productosListado', $json_a);
 			}			
 			
 			# Todas las opciones de búsqueda disponible
@@ -82,7 +72,7 @@ class ProductosController extends AppController {
 					$marcas[] = $elemento['Marca']['marca'];
 					if($elemento['Marca']['marca']=='SAMSUNG'){
 						if(!in_array($elemento['Modelo']['modelo'], $modelosSamsung)){
-							$modelosSamsung[] = $elemento['Modelo']['modelo'];	
+							$modelosSamsung[] = $elemento['Modelo']['modelo'];
 						}	
 					} elseif($elemento['Marca']['marca']=='XEROX'){
 						if(!in_array($elemento['Modelo']['modelo'], $modelosXerox)){
@@ -112,12 +102,9 @@ class ProductosController extends AppController {
 					$results = Set::sort($results, '{n}.Version.version', 'asc'); //ordeno version
 					$results = Set::sort($results, '{n}.Modelo.modelo', 'asc');
 					$this->set('productosListado', $results);
-				
-					//$this->set('productosListado', $productosListado);
 				} else {
 					# Si selecciona modelo
 					if($this->data['Producto']['modelo_id']!=''){
-						
 						foreach ($json_a as $elemento) {
 							if(($elemento['Marca']['marca'] == $json_a[$this->data['Producto']['marca_id']]['Marca']['marca']) &&
 							   	($elemento['Modelo']['modelo'] == $modelos[$this->data['Producto']['modelo_id']])){
@@ -137,11 +124,16 @@ class ProductosController extends AppController {
 						$results = Set::sort($results, '{n}.Version.version', 'asc'); //ordeno version
 						$results = Set::sort($results, '{n}.Modelo.modelo', 'asc');
 						$this->set('productosListado', $results);
-						//$this->set('productosListado', $productosListado);
 					}
 				}
 			}
 		} 
+		# me traigo todos los productos cargados en p-printer.com
+		$nuevos = file_get_contents("http://p-printer.com/productos/getNuevosProductos");
+		$productosnuevos = json_decode($nuevos, true);
+
+		# Seteo los valores que aparecen en las opciones de búsqueda
+		$this->set('productosnuevos', $productosnuevos);
 	}
 
 	/**
@@ -151,32 +143,29 @@ class ProductosController extends AppController {
 	public function solicitar($marca, $modelo){
 		$this->set('marca', $marca);
 		$this->set('modelo', $modelo);
-	}	
-	
+	}
+
 	/**
 	 * enviar method
 	 *
 	 */
 	public function enviar(){
 		$this->layout = 'default';
-		
 		$to = 'ventas@printaargentina.com.ar';
-		
 		# Armo el mensaje para enviar al mail.   
         $mensaje = 	'Tipo de consulta: Solicitud Firmware'."\n\n".
         			'Datos de Contacto'."\n".
         			'Mail: '.$this->data['Producto']['email']."\n".
         			'Teléfono: '.$this->data['Producto']['telefono']."\n\n".
-                    
                     'Solicitud de Reset para Impresora: '."\n".'Marca: '.$this->data['Producto']['marca']."\n".'Modelo: '.$this->data['Producto']['modelo'];
 										
 		$header = 'From: ' . $this->data['Contacto']['email'] . " \r\n";
 		$header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
 		$header .= "Mime-Version: 1.0 \r\n";
 		$header .= "Content-Type: text/plain; charset=UTF-8";
-					
         if(mail($to, '=?UTF-8?B?'.base64_encode('Consulta Printa Argentina').'?=', $mensaje, $header )){
         	$this->redirect(array('controller' => 'productos', 'action' => 'buscar'));
         }
 	}
 }
+?>
