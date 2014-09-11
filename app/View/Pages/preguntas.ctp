@@ -7,21 +7,8 @@
 	</div>
 </div>
 <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
-	<!--
-	<div class="row hidden-xs">
-		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-			<ul class="nav nav-tabs">
-  				<li><?php echo $this->Html->link("Firmware Disponible", array('controller'=>'pages', 'action'=>'firmware'), array('class'=>'pestania'))?></li>
-  				<li><?php echo $this->Html->link("Recuperación", array('controller'=>'pages', 'action'=>'recuperacion'), array('class'=>'pestania'))?></li>
-  				<li class="active"><?php echo $this->Html->link("Preguntas Frecuentes", array('controller'=>'pages', 'action'=>'preguntas'), array('class'=>'pestania'))?></li>
-			</ul>
-		</div>
-	</div>-->
 	<div class="row">
 		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-			<!--
-			<h4 class="titulo visible-xs">Preguntas Frecuentes</h4>
-			<hr class="linea visible-xs">-->
 			<h4 class="titulo">Preguntas Frecuentes</h4>
 			<hr class="linea">
 			<ol>
@@ -67,13 +54,10 @@
 					<div class="caja-preguntas">
 						Si usted en la hoja de informe observa en la identificación de la placa madre una anotación anormal, por ejemplo:<br>
 						a) Machine Serial Number: PBA_i-DPT_USBNo1<br>
-
 						b) Machine Serial Number: 14 caracteres<br>
-
 						c) Machine Serial Number: 0000-00000000000 <br>
 						Por favor comuníquese con nosotros, su impresora aún se puede recuperar.
 					</div>
-					
 					Para ver casos de impresoras BIEN DESBLOQUEADAS con nuestro servicio, por favor observar las imágenes de 
 					<?php echo $this->Html->link("Ejemplos", array('controller'=>'pages', 'action'=>'ejemplos'), array('class'=>'pestania btn btn-default'))?>
 					</p>

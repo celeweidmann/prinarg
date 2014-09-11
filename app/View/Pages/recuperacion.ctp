@@ -10,7 +10,6 @@
 	<div class="row">
 		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 			<ul class="nav nav-tabs  hidden-xs">
-  				<!--<li><?php echo $this->Html->link("Preguntas Frecuentes", array('controller'=>'pages', 'action'=>'preguntas'), array('class'=>'pestania'))?></li>-->
   				<li><?php echo $this->Html->link("Reciclado", array('controller'=>'pages', 'action'=>'reciclado'), array('class'=>'pestania'))?></li>
   				<li class="active"><?php echo $this->Html->link("Recuperación", array('controller'=>'pages', 'action'=>'recuperacion'), array('class'=>'pestania'))?></li>
   				<li><?php echo $this->Html->link("Firmware Disponible / Recarga de Cartuchos", array('controller'=>'productos', 'action'=>'buscar'), array('class'=>'pestania'))?></li>
@@ -25,19 +24,13 @@
 				</p>
 			</div>
 			<br>
-			<p>
-				Si usted observa en la hoja de informe de la placa madre una anotación anormal, por ejemplo:
-			</p>
+			<p>Si usted observa en la hoja de informe de la placa madre una anotación anormal, por ejemplo:</p>
 			<hr class="linea">
 			<p>
-				a) Machine Serial Number:
-				<br>
-				I) PBA_i-DPT_USBNo1
-				<br>
-				II) 0000-00000000000
-				<br>
-				III) Seriales de 14 digitos
-				<br><br>
+				a) Machine Serial Number:<br>
+				I) PBA_i-DPT_USBNo1<br>
+				II) 0000-00000000000<br>
+				III) Seriales de 14 digitos<br><br>
 				Algunos ejemplos:<br>
 	 			ML-2165W SERIAL: "0000-00000000000"<br>
 	 			CLP-310 / CLP-315 SERIAL: "0000-00000000000"<br>
@@ -47,10 +40,8 @@
 			<hr class="linea">
 			<div class="destacado">
 				<p class="text-center">
-				<em>
-				Por favor comuníquese con nosotros, su impresora aún se puede recuperar.
-				</em>
-			</p>
+				<em>Por favor comuníquese con nosotros, su impresora aún se puede recuperar.</em>
+				</p>
 			</div>
 		</div>
 	</div>
@@ -58,17 +49,14 @@
 	<div class="row">
 		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 			<h4 class="titulo">¿Cómo conocer si su impresora está en ESTADO de RECUPERACIÓN?</h4><hr class="linea">
-			<p>
-				Luego del desbloqueo que usted hizo, la impresora cumple con varios o uno de los siguientes ITEMS:
-			</p>
+			<p>	Luego del desbloqueo que usted hizo, la impresora cumple con varios o uno de los siguientes ITEMS:</p>
 			<p>
 				a) NO IMPRIME con ningún tipo de cartucho (Alternativo u Original).<br>
 				b) Indica CONTINUAMENTE "TÓNER AGOTADO o TÓNER INCOMPATIBLE".<br>
 				c) NO IMPRIME con cartuchos SIN CHIP.<br>
 				d) La impresora no inicia.<br>
 				e) OTROS comportamientos anormales.
-			</p>
-			<br>
+			</p><br>
 			<p>
 				Para poder RECUPERAR una impresora es necesario conocer:<br>
 
@@ -76,11 +64,8 @@
     			2) Informe de la impresora (con la version actual de Firmware)<br>
     			3) Número de serie de la impresora (¡NO DE LA ETIQUETA TRASERA!), obtenido desde el panel de la impresora. También en la identificación de la placa madre puede observar una anotación anormal, por ejemplo:<br>
     			a) Machine Serial Number: PBA_i-DPT_USBNo1<br>
-					<br>
 			    b) Machine Serial Number: 14 caracteres<br>
-	
     			c) Machine Serial Number: 0000-00000000000
-			
 			</p>			
 		</div>
 	</div>

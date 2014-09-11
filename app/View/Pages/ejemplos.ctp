@@ -2,12 +2,10 @@
 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
 	<div class="row">
 		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-			
 		</div>
 	</div>
 </div>
 <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
-
 	<div class="row">
 		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 			<ul class="nav nav-tabs">
@@ -19,7 +17,6 @@
 			<p class="text-justify ejemplo">
 				Una impresora BIEN DESBLOQUEADA también contiene una letra "f" al final de la "Version Firmware", pero la DIFERENCIA es que PERMITE 
 				imprimir con cartuchos (originales o alternativos) sin chip, problemas o luz de aviso de error.
-		
 				<div class="caja-preguntas">
 					Si usted en la hoja de informe observa en la identificación de la placa madre una anotación anormal, por ejemplo:<br>
 					a) Machine Serial Number: PBA_i-DPT_USBNo1<br>
@@ -142,9 +139,7 @@
 					</a>
 				</div>
 				<div class="col-lg-9 col-md-9 col-sm-9">
-					<p>
-					Ejemplo de V19N <strong>DESPUÉS</strong> del desbloqueo<br>
-					</p>	
+					<p>Ejemplo de V19N <strong>DESPUÉS</strong> del desbloqueo<br></p>	
 				</div>	
 			</div>
 			<hr class="linea-ejemplos">
@@ -181,9 +176,7 @@
 					</a>
 				</div>
 				<div class="col-lg-6 col-md-6 col-sm-6">
-					<p>
-					Ejemplo de Firmware V08 Aplicado <strong>DESPUÉS</strong> del desbloqueo<br>
-					</p>	
+					<p>Ejemplo de Firmware V08 Aplicado <strong>DESPUÉS</strong> del desbloqueo<br></p>	
 				</div>	
 			</div>
 			<hr class="linea-ejemplos">
@@ -208,7 +201,7 @@
 					</a>
 				</div>
 				<div class="col-lg-6 col-md-6 col-sm-6">
-					<p>	Ejemplo de Firmware V06 Aplicado<br></p>	
+					<p>Ejemplo de Firmware V06 Aplicado<br></p>	
 				</div>	
 			</div>
 			<hr class="linea-ejemplos">
